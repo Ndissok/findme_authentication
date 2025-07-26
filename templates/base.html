@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   {% load static %}
   <meta charset="UTF-8">
-  <title>Auth App</title>
+  <title>{% block title %}Auth App{% endblock %}</title>
   <script src="https://unpkg.com/htmx.org@1.9.12"></script>
   <link href="{% static 'css/output.css' %}" rel="stylesheet">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
 </head>
-<body class="p-10">
-  <div class="max-w-md mx-auto bg-blue-700">
+<body class="bg-background text-secondary min-h-screen flex items-center justify-center">
+  <div class="w-full bg-background text-secondary">
     {% block content %}{% endblock %}
   </div>
 </body>

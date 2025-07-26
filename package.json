@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev:css": "npx tailwindcss -i ./tailwind_src/css/input.css -o ./static/css/output.css --watch --poll=500 --verbose",
-    "build:css": "tailwindcss -i ./tailwind_src/css/input.css -o ./static/css/output.css --minify"
+    "build:css": "npx tailwindcss -i ./tailwind_src/css/input.css -o ./static/css/output.css --minify"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
