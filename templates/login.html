@@ -6,14 +6,16 @@
 <div class="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
   <!-- Left Side Image -->
   <div class="hidden lg:flex bg-secondary items-center justify-center">
-    <img src="{% static 'images/logo.png' %}" alt="Side Art" class="max-w-md">
+    <div class="bg-white rounded-lg p-6">
+      <img src="{% static 'images/logo.png' %}" alt="Side Art" class="max-w-md">
+    </div>
   </div>
 
   <!-- Right Side Form -->
   <div class="w-full flex items-center justify-center px-6">
     <div class="max-w-md w-full space-y-6">
       <div class="flex flex-col items-center">
-        <img src="{% static 'images/logo.png' %}" alt="Logo" class="w-12 h-12 mb-4">
+        <img src="{% static 'images/logo.png' %}" alt="Logo" class="mb-4">
         <h2 class="text-2xl font-bold text-gray-800">Hey, Hello</h2>
         <p class="text-sm text-gray-500">Entrez vos identifiants pour continuer.</p>
       </div>
